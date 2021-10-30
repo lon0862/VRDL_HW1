@@ -55,7 +55,7 @@ I follow training_labels.txt and class.txt to do some preprocess to divide train
 And get one images in every class to validation_images, which is empty origin.<br>
 You can download data_preparing.ipynb and use colab to do these process.<br>
 
-Or you also can just download train_images_new,validation_images to use.They are structured as:
+Or you also can just download train_images_new, validation_images from the link to use.They are structured as:
 ```
 train_images_new
     +- 001.Black_footed_Albatross
