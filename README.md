@@ -1,15 +1,37 @@
 # VRDL_HW1
-200 bird images classification code for the assignment of Selected Topics in Visual Recognition using Deep Learning, NYCU, in fall 2021.
-Accuracy is 0.67194, over the baseline
+200 bird images classification code for the assignment of Selected Topics in Visual Recognition using Deep Learning, NYCU, in fall 2021.<br>
+Accuracy is 0.67194, over the baseline.<br>
+
 ## Abstract
 In this work,I use efficientnet-b6 to train model, and all the work is done on Google Colab with gpu.<br>
 You can follow the notebook to check the detail if you want.<br>
+You can download all data and model from this link [VRDL_HW1](https://drive.google.com/drive/folders/1b717BfH1ZSHI1JrqZ8DDUDbMsScpT3qc?usp=sharing)
+Its structured is:
+```
+VRDL_HW1
+    +- train_images
+    +- train_images_new
+    +- test_images
+    +- validation_images
+    +- training_labels.txt
+    +- classes.txt
+    +- testing_img_order.txt
+    +- answer.txt
+    +- hw1_total.ipynb
+    +- data_preparing.ipynb
+    +- efficientnet_b6_pretrain.ipynb
+    +- inference.ipynb
+    +- weight_eff.pth
+```
+hw1_total.ipynb is the total code of data_preparing.ipynb, efficientnet_b6_pretrain.ipynb, inference.ipynb
 
 ## Reproducing submission
 To reproduct my submission, do the following steps:
 1. [Installation](#installation)
 2. [Data preparation](#data-preparation)
 3. [Pretrain model](#pretrain-model)
+4. [Inference](#inference)
+
 ## Installation
 
 ## Data preparation
@@ -54,10 +76,10 @@ validation_images
 ```
 
 ## Pretrain model
-I use model efficientnet-b6 and save wight to weight_eff.pth.<br>
+I use model efficientnet-b6 and save wight to weight_eff.pth .<br>
 You can download efficientnet_b6_pretrain.ipynb and use colab to run.<br>
 
 ## Inference
 You need to download weight_eff.pth and inference.ipynb.<br>
-Run inference.ipynb with colab, then you can get answer.txt, which accuracy is 0.67194.<br>
+Run inference.ipynb with colab, then you can get answer.txt, which output order is following testing_img_order.txt,and accuracy is 0.67194.<br>
 
