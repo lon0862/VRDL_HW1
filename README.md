@@ -1,6 +1,6 @@
 # VRDL_HW1
 200 bird images classification code for the assignment of Selected Topics in Visual Recognition using Deep Learning, NYCU, in fall 2021.
-
+Accuracy is 0.67194, over the baseline
 ## Abstract
 In this work,I use efficientnet-b6 to train model, and all the work is done on Google Colab with gpu.<br>
 You can follow the notebook to check the detail if you want.<br>
@@ -18,11 +18,11 @@ train_images has 3000 bird images.<br>
 test_images has 3033 bird images.<br>
 They are structured as:
 ```
-+- train_images
+train_images
     +- 0003.jpg
     +- 0008.jpg
     ...
-+- test_images
+test_images
     +- 0001.jpg
     +- 0002.jpg
     ...
@@ -69,5 +69,22 @@ for index in range(1):
             j += 1
 ```
 You also can just download train_images_new,validation_images to use.They are structured as:
-
+```
+train_images_new
+    +- 001.Black_footed_Albatross
+        +- 3154.jpg
+        +- 3731.jpg
+        ...
+    +- 002.Laysan_Albatross
+        +- 0847.jpg
+        +- 1268.jpg
+        ...
+    ...
+validation_images
+    +- 001.Black_footed_Albatross
+        +- 3212.jpg
+    +- 002.Laysan_Albatross
+        +- 3666.jpg
+    ...
+```
 ## Pretrain model
