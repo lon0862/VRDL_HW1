@@ -78,7 +78,7 @@ validation_images
 ## Pretrain model
 I use model efficientnet-b6 and save wight to weight_eff.pth .<br>
 You can download efficientnet_b6_pretrain.ipynb and use colab to run.<br>
-
+1
 ## Inference
 You need to download weight_eff.pth and inference.ipynb.<br>
 Run inference.ipynb with colab, then you can get answer.txt, which output order is following testing_img_order.txt,and accuracy is 0.67194.<br>
