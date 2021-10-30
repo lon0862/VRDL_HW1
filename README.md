@@ -5,7 +5,16 @@ Accuracy is 0.67194, over the baseline.<br>
 ## Abstract
 In this work,I use efficientnet-b6 to train model, and all the work is done on Google Colab with gpu.<br>
 You can follow the notebook to check the detail if you want.<br>
-You can download all dataset and model from this link [VRDL_HW1](https://drive.google.com/drive/folders/1b717BfH1ZSHI1JrqZ8DDUDbMsScpT3qc?usp=sharing)
+
+## Reproducing submission
+To reproduct my submission, do the following steps:
+1. [Installation](#installation)
+2. [Data preparation](#data-preparation)
+3. [Pretrain model](#pretrain-model)
+4. [Inference](#inference)
+
+## Installation
+Download all dataset and model from this link [VRDL_HW1](https://drive.google.com/drive/folders/1b717BfH1ZSHI1JrqZ8DDUDbMsScpT3qc?usp=sharing)
 Its structured is:
 ```
 VRDL_HW1
@@ -24,15 +33,6 @@ VRDL_HW1
     +- weight_eff.pth
 ```
 hw1_total.ipynb is the total code of data_preparing.ipynb, efficientnet_b6_pretrain.ipynb, inference.ipynb
-
-## Reproducing submission
-To reproduct my submission, do the following steps:
-1. [Installation](#installation)
-2. [Data preparation](#data-preparation)
-3. [Pretrain model](#pretrain-model)
-4. [Inference](#inference)
-
-## Installation
 
 ## Data preparation
 Origin TA give us train_images,test_images as the data directory.<br>
