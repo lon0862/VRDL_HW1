@@ -5,7 +5,7 @@ Accuracy is 0.67194, over the baseline.<br>
 ## Abstract
 In this work,I use efficientnet-b6 to train model, and all the work is done on Google Colab with gpu.<br>
 You can follow the notebook to check the detail if you want.<br>
-You can download all data and model from this link [VRDL_HW1](https://drive.google.com/drive/folders/1b717BfH1ZSHI1JrqZ8DDUDbMsScpT3qc?usp=sharing)
+You can download all dataset and model from this link [VRDL_HW1](https://drive.google.com/drive/folders/1b717BfH1ZSHI1JrqZ8DDUDbMsScpT3qc?usp=sharing)
 Its structured is:
 ```
 VRDL_HW1
