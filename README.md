@@ -12,6 +12,7 @@ To reproduct my submission, do the following steps:
 2. [Data preparation](#data-preparation)
 3. [Pretrain model](#pretrain-model)
 4. [Inference](#inference)
+5. [Make submission](#make-submission)
 
 ## Installation
 Download all dataset and model from this link [VRDL_HW1](https://drive.google.com/drive/folders/1b717BfH1ZSHI1JrqZ8DDUDbMsScpT3qc?usp=sharing)
@@ -83,3 +84,6 @@ You can download efficientnet_b6_pretrain.ipynb and use colab to run.<br>
 You need to download weight_eff.pth and inference.ipynb.<br>
 Run inference.ipynb with colab, then you can get answer.txt, which output order is following testing_img_order.txt,and accuracy is 0.67194.<br>
 
+## Make submission
+Download answer.txt you produce,make it to zip file.<br>
+Then upload it to [Codalab](https://competitions.codalab.org/competitions/35668?secret_key=09789b13-35ec-4928-ac0f-6c86631dda07)
