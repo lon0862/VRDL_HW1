@@ -9,6 +9,7 @@ You can follow the notebook to check the detail if you want.<br>
 To reproduct my submission, do the following steps:
 1. [Installation](#installation)
 2. [Data preparation](#data-preparation)
+3. [Pretrain model](#pretrain-model)
 ## Installation
 
 ## Data preparation
@@ -30,45 +31,9 @@ test_images
 
 I follow training_labels.txt and class.txt to do some preprocess to divide train_images into 200 class.<br>
 And get one images in every class to validation_images, which is empty origin.<br>
-```
-drive.mount('/content/gdrive')  # link google drive
-```
-```
-label_header = ["photo", "type"]
-labels = pd.read_csv("/content/gdrive/My Drive/VRDL_HW1/training_labels.txt",
-                     names=label_header, sep=' ')
-train_fold = "/content/gdrive/MyDrive/VRDL_HW1/train_images_new"
-valid_fold = "/content/gdrive/MyDrive/VRDL_HW1/validation_images"
+You can download data_preparing.ipynb and use colab to do these process.<br>
 
-class_header = ["type"]
-class_data = pd.read_csv("/content/gdrive/My Drive/VRDL_HW1/classes.txt",
-                         names=class_header, sep=' ')
-test_fold = "/content/gdrive/MyDrive/VRDL_HW1/test_images"
-```
-```
-# make training data to different folder
-foldername = "/content/gdrive/MyDrive/VRDL_HW1/train_images"
-for index in range(len(labels['photo'])):
-    print(data)
-    print(labels['photo'][index], labels['type'][index])
-    fdname = train_fold + '/' + labels['type'][index]
-    os.makedirs(fdname, exist_ok=True)
-    shutil.move(foldername + '/' + labels['photo'][index], fdname)
-```
-```
-# divide train data to validation data
-for index in range(1):
-    fdname_old = train_fold + '/' + class_data['type'][index]
-    fdname_new = valid_fold + '/' + class_data['type'][index]
-    os.makedirs(fdname_new, exist_ok=True)
-    j = 0
-    print(fdname_old)
-    for file in os.listdir(fdname_old):
-        if(j < 1):
-            shutil.move(fdname_old + '/' + file, fdname_new + '/' + file)
-            j += 1
-```
-You also can just download train_images_new,validation_images to use.They are structured as:
+Or you also can just download train_images_new,validation_images to use.They are structured as:
 ```
 train_images_new
     +- 001.Black_footed_Albatross
@@ -87,4 +52,12 @@ validation_images
         +- 3666.jpg
     ...
 ```
+
 ## Pretrain model
+I use model efficientnet-b6 and save wight to weight_eff.pth.<br>
+You can download efficientnet_b6_pretrain.ipynb and use colab to run.<br>
+
+## Inference
+You need to download weight_eff.pth and inference.ipynb.<br>
+Run inference.ipynb with colab, then you can get answer.txt, which accuracy is 0.67194.<br>
+
