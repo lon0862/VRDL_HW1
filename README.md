@@ -35,7 +35,28 @@ VRDL_HW1
 ```
 hw1_total.ipynb is the total code of data_preparing.ipynb, efficientnet_b6_pretrain.ipynb, inference.ipynb.<br>
 You can just run it to data prepare, pretrain model and get the answer.txt to submit.<br>
+All module and package you need to import is:
+```
+from google.colab import drive
+import pandas as pd 
+import torch
+import torch.nn.functional as F
+import torchvision
+from torchvision.datasets import ImageFolder
+from torch.utils.data import Dataset, DataLoader
+import torchvision.transforms as T
+import numpy as np
+import os
+import shutil
+from PIL import Image
+!pip install efficientnet_pytorch
+from efficientnet_pytorch import EfficientNet
+import torch.nn as nn
+import torch.optim as optim
+from torch.optim import lr_scheduler
 
+%matplotlib inline
+```
 ## Data preparation
 Origin TA give us train_images,test_images as the data directory.<br>
 And training_labels.txt as truth class for train_images, class.txt for class name<br>
