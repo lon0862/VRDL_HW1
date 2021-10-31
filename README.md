@@ -64,14 +64,15 @@ train_images has 3000 bird images.<br>
 test_images has 3033 bird images.<br>
 They are structured as:
 ```
-train_images
-    +- 0003.jpg
-    +- 0008.jpg
-    ...
-test_images
-    +- 0001.jpg
-    +- 0002.jpg
-    ...
+VRDL_HW1
+    +- train_images
+        +- 0003.jpg
+        +- 0008.jpg
+        ...
+    +- test_images
+        +- 0001.jpg
+        +- 0002.jpg
+        ...
 ```
 
 I follow training_labels.txt and class.txt to do some preprocess to divide train_images into 200 class.<br>
@@ -80,22 +81,23 @@ You can download data_preparing.ipynb and use colab to do these process.<br>
 
 Or you also can just download train_images_new, validation_images from the link to use.They are structured as:
 ```
-train_images_new
-    +- 001.Black_footed_Albatross
-        +- 3154.jpg
-        +- 3731.jpg
+VRDL_HW1
+    +- train_images_new
+        +- 001.Black_footed_Albatross
+            +- 3154.jpg
+            +- 3731.jpg
+            ...
+        +- 002.Laysan_Albatross
+            +- 0847.jpg
+            +- 1268.jpg
+            ...
         ...
-    +- 002.Laysan_Albatross
-        +- 0847.jpg
-        +- 1268.jpg
+    +- validation_images
+        +- 001.Black_footed_Albatross
+            +- 3212.jpg
+        +- 002.Laysan_Albatross
+            +- 3666.jpg
         ...
-    ...
-validation_images
-    +- 001.Black_footed_Albatross
-        +- 3212.jpg
-    +- 002.Laysan_Albatross
-        +- 3666.jpg
-    ...
 ```
 
 ## Pretrain model
