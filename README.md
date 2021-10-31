@@ -33,7 +33,8 @@ VRDL_HW1
     +- inference.ipynb
     +- weight_eff.pth
 ```
-hw1_total.ipynb is the total code of data_preparing.ipynb, efficientnet_b6_pretrain.ipynb, inference.ipynb
+hw1_total.ipynb is the total code of data_preparing.ipynb, efficientnet_b6_pretrain.ipynb, inference.ipynb.<br>
+You can just run it to data prepare, pretrain model and get the answer.txt to submit.<br>
 
 ## Data preparation
 Origin TA give us train_images,test_images as the data directory.<br>
